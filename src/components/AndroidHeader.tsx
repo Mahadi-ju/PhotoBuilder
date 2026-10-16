@@ -78,19 +78,19 @@ export const AndroidHeader: React.FC<AndroidHeaderProps> = ({
         <div className="flex items-center gap-2 sm:gap-3">
           <button
             onClick={onOpenImport}
-            className="p-2 rounded-full hover:bg-white/10 text-white/80 hover:text-white transition-colors active:scale-95"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/15 text-white transition-all active:scale-95 border border-white/10 group"
             title="Import or Switch Photo"
           >
-            <FolderOpen className="w-5 h-5 text-sky-400" />
+            <FolderOpen className="w-4 h-4 text-sky-400 group-hover:scale-110 transition-transform" />
+            <span className="text-xs font-semibold">Import Photo</span>
           </button>
           
-          <div>
+          <div className="hidden xs:block">
             <div className="flex items-center gap-1.5">
-              <h1 className="text-sm sm:text-base font-semibold text-white tracking-tight flex items-center gap-1.5">
+              <h1 className="text-sm font-semibold text-white tracking-tight flex items-center gap-1.5">
                 ClearPhoto <span className="text-[10px] bg-sky-500/20 text-sky-400 border border-sky-500/30 px-1.5 py-0.5 rounded-full font-mono uppercase font-bold">Rebuild</span>
               </h1>
             </div>
-            <p className="text-[11px] text-white/50 hidden sm:block">AI Old Photo Clarity & Restoration</p>
           </div>
         </div>
 
